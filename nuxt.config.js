@@ -1,4 +1,6 @@
 export default {
+  mode: 'universal',
+  srcDir: 'app',
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'nuxt-blog-service',
@@ -36,10 +38,13 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {},
+  axios: {
+    baseURL: 'https://nuxt-blog1224-default-rtdb.firebaseio.com'
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
