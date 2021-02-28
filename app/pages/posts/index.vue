@@ -47,7 +47,7 @@ export default {
         {
           id: '002',
           title: 'how to play the guiter',
-          body: 'ラルクアンシエル大好',
+          body: 'how to create firebase project.',
           created_at: '2019/12/10 12:00:00',
           user: {
             id: 'postId'
