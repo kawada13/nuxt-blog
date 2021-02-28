@@ -38,10 +38,14 @@ export default {
   },
   methods: {
     async publish() {
+      console.log(this.user);
+      console.log({...this.user});
       const payload = {
-        user: this.user,
+        user: {id: this.user},
         ...this.formData
       }
+      console.log(this.user);
+      console.log(payload);
       await this.publishPost({ payload })
       this.$router.push('/posts')
     },
