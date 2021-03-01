@@ -43,7 +43,6 @@ export const actions = {
       ...(user.posts || []),
       putData
     ])
-    console.log(fff);
     commit('addPost', { post })
   },
 }
