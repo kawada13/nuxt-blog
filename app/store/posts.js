@@ -36,7 +36,6 @@ export const actions = {
     const post = { id: post_id, ...payload }
     console.log(post);
     const putData = { id: post_id, ...payload,}
-    console.log(putData);
     delete putData.user
     const fff = await this.$axios.$put(`/users/${user.id}/posts.json`, [
       ...(user.posts || []),
